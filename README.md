@@ -2,14 +2,30 @@
 
 ## Giới thiệu
 
-Dự án này triển khai thuật toán tối ưu lai giữa Grey Wolf Optimizer (GWO) và Genetic Algorithm (GA) để giải quyết các bài toán tối ưu hàm thử nghiệm. Hệ thống sẽ chạy các thuật toán, lưu kết quả fitness vào các file CSV, sau đó gộp dữ liệu lại để phân tích.
+Dự án này phát triển một phương pháp tối ưu hóa lai giữa Grey Wolf Optimizer (GWO) và Genetic Algorithm (GA), kết hợp với chiến lược tinh chỉnh cực trị địa phương (CLS) để cải thiện khả năng tìm kiếm nghiệm tối ưu. Hệ thống sẽ thực thi các thuật toán, ghi lại giá trị fitness vào các file CSV và tổng hợp dữ liệu để phân tích.
+
+## Khởi tạo môi trường ảo
+
+Trước khi cài đặt các thư viện, bạn cần tạo một môi trường ảo để quản lý các thư viện Python. Chạy các lệnh sau:
+
+```bash
+# Tạo môi trường ảo
+python -m venv venv
+
+# Kích hoạt môi trường ảo
+# Trên Windows
+.\venv\Scripts\activate
+
+# Trên macOS/Linux
+source venv/bin/activate
+```
 
 ## Clone repository
 
 Để tải về source code, chạy lệnh sau:
 
 ```bash
-git clone <link-repo>
+https://github.com/nguyendevwk/GWO-GA-CLS.git
 ```
 
 ## 1. Cài đặt thư viện cần thiết
@@ -17,7 +33,7 @@ git clone <link-repo>
 Trước khi chạy chương trình, cần cài đặt các thư viện Python yêu cầu bằng lệnh:
 
 ```bash
-pip install numpy pandas matplotlib
+pip install -r requirements.txt
 ```
 
 ## 2. Cấu trúc thư mục
